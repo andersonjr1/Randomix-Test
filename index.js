@@ -14,7 +14,7 @@ app.appendChild(Header());
 app.appendChild(randomix);
 app.appendChild(Footer());
 
-switch(window.location.pathname){
+switch(localStorage.getItem("page")){
 	case "/Randomix-Test/scratch":
 		console.log("Scratch")
 		randomix.appendChild(ScratchPage())
@@ -28,6 +28,8 @@ switch(window.location.pathname){
 		randomix.appendChild(DefaultPage())
 		break
 }
+
+localSotorage.clear()
 
 // header
 document.addEventListener("onstatechange", function (e) {
