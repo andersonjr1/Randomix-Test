@@ -3,7 +3,7 @@ import {Footer} from "./src/components/footer/footer.js";
 import {router} from "./src/utils/router.js";
 import {DefaultPage} from "./src/pages/defaultRandomizer/index.js"
 import {SlotPage} from "./src/pages/slot/index.js"
-import {ScratchPage} from "./src/pages/scrachPage/index.js"
+import {ScratchPage} from "./src/pages/scratchPage/index.js"
 
 const app = document.getElementById("app");
 const randomix = document.createElement("div");
