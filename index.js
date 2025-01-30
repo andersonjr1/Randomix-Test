@@ -19,16 +19,14 @@ switch(localStorage.getItem("page")){
 	case "/Randomix-Test/scratch":
 		console.log("scratch")
 		randomix.innerHTML = "";
-		const path = "/Randomix-Test/scratch"
-		history.pushState({"path": path}, "", path);
-		randomix.appendChild(routerT[path]);
+		history.pushState({"path": "/Randomix-Test/scratch"}, "", "/Randomix-Test/scratch");
+		randomix.appendChild(routerT["/Randomix-Test/scratch"]);
 		break
 	case "/Randomix-Test/slot":
 		console.log("slot")
 		randomix.innerHTML = "";
-		const path = "/Randomix-Test/slot"
-		history.pushState({"path": path}, "", path);
-		randomix.appendChild(routerT[path]);
+		history.pushState({"path": "/Randomix-Test/slot"}, "", "/Randomix-Test/slot");
+		randomix.appendChild(routerT["/Randomix-Test/slot"]);
 		break
 	default:
 		console.log("Default")
