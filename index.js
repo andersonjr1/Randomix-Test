@@ -17,12 +17,18 @@ app.appendChild(Footer());
 
 switch(localStorage.getItem("page")){
 	case "/Randomix-Test/scratch":
-		console.log("Scratch")
-		customEventPath("/Randomix-Test/scratch")
+		console.log("scratch")
+		randomix.innerHTML = "";
+		const path = "/Randomix-Test/scratch"
+		history.pushState({"path": path}, "", path);
+		randomix.appendChild(routerT[path]);
 		break
 	case "/Randomix-Test/slot":
-		console.log("Slot")
-		customEventPath("/Randomix-Test/slot")
+		console.log("slot")
+		randomix.innerHTML = "";
+		const path = "/Randomix-Test/slot"
+		history.pushState({"path": path}, "", path);
+		randomix.appendChild(routerT[path]);
 		break
 	default:
 		console.log("Default")
