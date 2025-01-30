@@ -9,11 +9,10 @@
             const redirect = "/Randomix-Test" ;
             localStorage.setItem("page", window.location.pathname)
             if (redirect && redirect !== location.href) {
-                history.replaceState(null, null, "index.html");
+                history.replaceState(null, null, redirect);
             }
         })();
     </script>
-    <meta http-equiv="refresh" content="0; url=/">
 </head>
 <body>
     <p>Redirecting...</p>
