@@ -7,9 +7,9 @@ function router() {
     const defaultPage = DefaultPage()
     const slotPage = SlotPage()
     return {
-        "/": defaultPage,
-        "/scratch": scratchPage,
-        "/slot": slotPage,
+        "/Randomix-Test": defaultPage,
+        "/Randomix-Test/scratch": scratchPage,
+        "/Randomix-Test/slot": slotPage,
     }
 }
 
