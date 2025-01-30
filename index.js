@@ -16,12 +16,15 @@ app.appendChild(Footer());
 
 switch(window.location.pathname){
 	case "/Randomix-Test/scratch":
+		console.log("Scratch")
 		randomix.appendChild(ScratchPage())
 		break
 	case "/Randomix-Test/slot":
+		console.log("Slot")
 		randomix.appendChild(SlotPage())
 		break
 	default:
+		console.log("Default")
 		randomix.appendChild(DefaultPage())
 		break
 }
