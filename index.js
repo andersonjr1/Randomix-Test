@@ -30,7 +30,7 @@ switch(localStorage.getItem("page")){
 		break
 }
 
-localSotorage.clear()
+localStorage.clear()
 
 // header
 document.addEventListener("onstatechange", function (e) {
