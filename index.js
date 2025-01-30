@@ -29,6 +29,8 @@ switch(window.location.pathname){
 		break
 }
 
+randomix.appendChild(DefaultPage())
+
 // header
 document.addEventListener("onstatechange", function (e) {
 	randomix.innerHTML = "";
