@@ -2,6 +2,8 @@ import {Header} from "./src/components/header/header.js";
 import {Footer} from "./src/components/footer/footer.js";
 import {router} from "./src/utils/router.js";
 import {DefaultPage} from "./src/pages/defaultRandomizer/index.js"
+import {SlotPage} from "./src/pages/slot/index.js"
+import {ScratchPage} from "./src/pages/scrachPage/index.js"
 
 const app = document.getElementById("app");
 const randomix = document.createElement("div");
@@ -12,7 +14,17 @@ app.appendChild(Header());
 app.appendChild(randomix);
 app.appendChild(Footer());
 
-randomix.appendChild(DefaultPage())
+switch(window.location.pathname){
+	case "/Randomix-Test/scratch":
+		randomix.appendChild(ScratchPage())
+		break
+	case "/Randomix-Test/slot":
+		randomix.appendChild(SlotPage())
+		break
+	default:
+		randomix.appendChild(DefaultPage())
+		break
+}
 
 // header
 document.addEventListener("onstatechange", function (e) {
