@@ -30,19 +30,19 @@ function Header() {
 }
 
 function redirectHomePage() {
-  const toHomePage = customEventPath("/");
+  const toHomePage = customEventPath("/Randomix-Test");
 
   document.dispatchEvent(toHomePage);
 }
 
 function redirectScratchPage() {
-  const toScratchPage = customEventPath("/scratch");
+  const toScratchPage = customEventPath("/Randomix-Test/scratch");
 
   document.dispatchEvent(toScratchPage);
 }
 
 function redirectSlotPage() {
-  const toSlotPage = customEventPath("/slot");
+  const toSlotPage = customEventPath("/Randomix-Test/slot");
 
   document.dispatchEvent(toSlotPage);
 }
