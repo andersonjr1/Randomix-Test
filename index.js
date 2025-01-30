@@ -4,6 +4,7 @@ import {router} from "./src/utils/router.js";
 import {DefaultPage} from "./src/pages/defaultRandomizer/index.js"
 import {SlotPage} from "./src/pages/slot/index.js"
 import {ScratchPage} from "./src/pages/scratchPage/index.js"
+import { customEventPath } from "./src/utils/customEvent.js";
 
 const app = document.getElementById("app");
 const randomix = document.createElement("div");
@@ -17,11 +18,11 @@ app.appendChild(Footer());
 switch(localStorage.getItem("page")){
 	case "/Randomix-Test/scratch":
 		console.log("Scratch")
-		randomix.appendChild(ScratchPage())
+		customEventPath("/Randomix-Test/scratch")
 		break
 	case "/Randomix-Test/slot":
 		console.log("Slot")
-		randomix.appendChild(SlotPage())
+		customEventPath("/Randomix-Test/slot")
 		break
 	default:
 		console.log("Default")
